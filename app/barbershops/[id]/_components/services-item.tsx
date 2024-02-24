@@ -180,14 +180,14 @@ const ServiceItem = ({
                     <SheetTitle>Fazer Reserva</SheetTitle>
                   </SheetHeader>
 
-                  <div className="py-6">
+                  <div className="py-2">
                     <Calendar
                       mode="single"
                       selected={date}
                       onSelect={handleDateClick}
                       locale={ptBR}
                       fromDate={addDays(new Date(), 1)}
-                      className="mt-6"
+                      className="mt-2"
                       styles={{
                         head_cell: {
                           width: "100%",
