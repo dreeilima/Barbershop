@@ -202,7 +202,9 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                     disabled={isDeleteLoading}
                     onClick={handleCancelClick}
                   >
-                    <Loader2 className="animate-spin mr-2 h-4 w-4" />
+                    {isDeleteLoading && (
+                      <Loader2 className="animate-spin mr-2 h-4 w-4" />
+                    )}
                     Confirmar
                   </AlertDialogAction>
                 </AlertDialogFooter>
